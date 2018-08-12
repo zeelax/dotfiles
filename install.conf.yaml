@@ -11,4 +11,4 @@
     ~/.config/termite/config: termite
     ~/.gitconfig: gitconfig
     ~/.xinitrc: xinitrc
-
+    ~/.zshrc: zsh/zshrc
