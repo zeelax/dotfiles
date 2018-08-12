@@ -95,3 +95,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+# Some custom stuff here (for now)
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
+export ANSIBLE_AWS_KEYPAIR=mkravets
+#export PATH=/usr/local/bin:$PATH
