@@ -190,5 +190,6 @@ exec --no-startup-id xcalib ~/arch/05P7H-LQ133Z1\ \#1\ 2016-01-27\ 22-20\ D6500\
 exec --no-startup-id dropbox
 exec --no-startup-id redshift-gtk
 exec --no-startup-id xset r rate 200 50
+exec --no-startup-id ~/.fehbg
 
 hide_edge_borders smart
