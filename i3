@@ -184,6 +184,9 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightnes
 bindsym shift+XF86MonBrightnessUp exec xbacklight -inc 1 # increase screen brightness
 bindsym shift+XF86MonBrightnessDown exec xbacklight -dec 1 # decrease screen brightness
 
+# Redshift toggle
+bindsym $mod+XF86MonBrightnessUp exec killall -USR1 redshift
+
 # Lock screen
 bindsym $mod+mod1+l exec --no-startup-id i3lock -c 000000
 
