@@ -8,6 +8,7 @@
     ~/.dotfiles: ''
     ~/.config/i3/config: i3
     ~/.config/i3blocks/config: i3blocks
+    ~/.config/networkmanager-dmenu/config.ini: networkmanager-dmenu.ini
     ~/.config/termite/config: termite
     ~/.gitconfig: gitconfig
     ~/.xinitrc: xinitrc

@@ -36,7 +36,7 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec dmenu_run -sb '#DEB968' -sf '#222222'
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -157,6 +157,14 @@ focus_follows_mouse no
 bar {
         status_command i3blocks
         height 40
+
+    colors {
+        focused_workspace  #917944 #DEB968 #232b38
+        active_workspace   #333333 #222222 #E3C891
+        inactive_workspace #333333 #222222 #888888
+        urgent_workspace   #2F343A #900000 #FFFFFF
+        binding_mode       #2F343A #900000 #FFFFFF
+    }
 }
 
 # Pulse Audio controls
@@ -193,3 +201,22 @@ exec --no-startup-id xset r rate 200 50
 exec --no-startup-id ~/.fehbg
 
 hide_edge_borders smart
+
+
+# Gaps
+for_window [class="^.*"] border pixel 1
+gaps inner 4
+gaps outer 2
+smart_borders no_gaps
+
+bindsym $mod+y       gaps inner current minus 2
+bindsym $mod+u       gaps inner current plus 2
+bindsym $mod+Shift+y gaps outer current minus 2
+bindsym $mod+Shift+u gaps outer current plus 2
+
+# class                 border  backgr. text    indicator child border
+client.focused          #917944 #DEB968 #232B38 #DEB968   #917944
+client.focused_inactive #333333 #5F676A #232B38 #484E50   #5F676A
+client.unfocused        #333333 #222222 #888888 #292D2E   #222222
+client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
