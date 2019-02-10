@@ -209,8 +209,9 @@ hide_edge_borders smart
 
 
 # Gaps
-for_window [class="^.*"] border pixel 1
-gaps inner 4
+default_border pixel 1
+#for_window [class="^.*"] border pixel 1
+gaps inner 6
 gaps outer 2
 smart_borders no_gaps
 
