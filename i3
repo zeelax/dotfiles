@@ -227,3 +227,29 @@ client.focused_inactive #333333 #5F676A #232B38 #484E50   #5F676A
 client.unfocused        #333333 #222222 #888888 #292D2E   #222222
 client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+
+
+## New cool config starts here :)
+
+### Input configuration
+#
+# You can get the names of your inputs by running: swaymsg -t get_inputs
+# Read `man 5 sway-input` for more information about this section.
+#
+# Keyboard
+#
+    input "1:1:AT_Translated_Set_2_keyboard" {
+        repeat_delay 200
+        repeat_rate 50
+        xkb_layout "us,ru"
+        xkb_options grp:caps_toggle,grp_led:caps,lv3:ralt_switch_multikey,misc:typo
+    }
+
+#
+# Touchpad
+#
+    input "1739:30383:DLL075B:01_06CB:76AF_Touchpad" {
+        accel_profile adaptive
+        natural_scroll enabled
+        pointer_accel 0.55
+    }
