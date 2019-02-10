@@ -6,6 +6,7 @@
 
 - link:
     ~/.dotfiles: ''
+    ~/.config/compton.conf: compton.conf
     ~/.config/i3/config: i3
     ~/.config/i3blocks/config: i3blocks
     ~/.config/networkmanager-dmenu/config.ini: networkmanager-dmenu.ini
