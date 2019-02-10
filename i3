@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:monospace 18
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -157,7 +157,7 @@ focus_follows_mouse no
 bar {
         status_command i3blocks
         height 40
-        font pango:DejaVu Sans Mono, Icons 8
+        font pango:DejaVu Sans Mono, Icons 18
 
     colors {
         focused_workspace  #917944 #DEB968 #232b38
