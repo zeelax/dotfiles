@@ -36,7 +36,7 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -sb '#DEB968' -sf '#222222' -fn 'DejaVu Sans Mono-8'
+bindsym $mod+d exec dmenu_run -sb '#DEB968' -sf '#222222' -fn 'DejaVu Sans Mono-18'
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
