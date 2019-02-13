@@ -193,7 +193,7 @@ bindsym $mod+XF86MonBrightnessUp exec killall -USR1 redshift
 bindsym $mod+mod1+l exec --no-startup-id i3lock -c 000000
 
 # NetworkManager dmenu
-bindcode $mod+49 exec networkmanager_dmenu
+bindcode $mod+49 exec networkmanager_dmenu -fn 'DejaVu Sans Mono-18'
 
 # Dmenu calculator
 bindsym $mod+equal exec /usr/local/bin/=
