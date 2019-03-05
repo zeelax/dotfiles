@@ -11,7 +11,9 @@
     ~/.config/i3blocks/config:
       create: true
       path: i3blocks
-    ~/.config/networkmanager-dmenu/config.ini: networkmanager-dmenu.ini
+    ~/.config/networkmanager-dmenu/config.ini:
+      create: true
+      path: networkmanager-dmenu.ini
     ~/.config/termite/config:
       create: true
       path: termite
