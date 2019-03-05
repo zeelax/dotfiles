@@ -248,7 +248,7 @@ client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 #
 # Touchpad
 #
-    input "1739:30383:DLL075B:01_06CB:76AF_Touchpad" {
+    input "1739:30383:DELL08AF:00_06CB:76AF_Touchpad" {
         accel_profile adaptive
         natural_scroll enabled
         pointer_accel 0.55
