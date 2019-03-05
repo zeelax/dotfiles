@@ -156,8 +156,7 @@ focus_follows_mouse no
 # finds out, if available)
 bar {
         status_command i3blocks
-        height 40
-        font pango:DejaVu Sans Mono, Icons 8
+        font pango:DejaVu Sans Mono, Icons 12
 
     colors {
         focused_workspace  #917944 #DEB968 #232b38

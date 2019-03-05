@@ -1,5 +1,5 @@
 [options]
-font = monospace 20
+font = monospace 13
 scrollback_lines = 100000
 cursor_blink = off
 
