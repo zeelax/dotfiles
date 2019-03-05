@@ -17,6 +17,9 @@
     ~/.config/termite/config:
       create: true
       path: termite
+    ~/.config/systemd/user/ssh-agent.service:
+      create: true
+      path: ssh-agent.service
     ~/.gitconfig: gitconfig
     ~/.xinitrc: xinitrc
     ~/.zshrc: zsh/zshrc
