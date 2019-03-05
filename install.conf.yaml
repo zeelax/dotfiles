@@ -8,9 +8,13 @@
     ~/.dotfiles: ''
     ~/.config/compton.conf: compton.conf
     ~/.config/i3/config: i3
-    ~/.config/i3blocks/config: i3blocks
+    ~/.config/i3blocks/config:
+      create: true
+      path: i3blocks
     ~/.config/networkmanager-dmenu/config.ini: networkmanager-dmenu.ini
-    ~/.config/termite/config: termite
+    ~/.config/termite/config:
+      create: true
+      path: termite
     ~/.gitconfig: gitconfig
     ~/.xinitrc: xinitrc
     ~/.zshrc: zsh/zshrc
