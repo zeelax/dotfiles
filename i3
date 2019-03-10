@@ -204,6 +204,7 @@ exec --no-startup-id dropbox
 exec --no-startup-id redshift-gtk
 exec --no-startup-id xset r rate 200 50
 exec --no-startup-id ~/.fehbg
+exec --no-startup-id xss-lock -l -- i3lock -c 000000
 
 hide_edge_borders smart
 
