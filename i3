@@ -179,11 +179,12 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec brightnessctl set +5% # increase screen brightness
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%- # decrease screen brightness
 
-bindsym shift+XF86MonBrightnessUp exec xbacklight -inc 1 # increase screen brightness
-bindsym shift+XF86MonBrightnessDown exec xbacklight -dec 1 # decrease screen brightness
+# Doesn't works at the moment (https://github.com/swaywm/sway/issues/3540)
+bindsym shift+XF86MonBrightnessUp exec brightnessctl set +1% # increase screen brightness
+bindsym shift+XF86MonBrightnessDown exec brightnessctl set 1%- # decrease screen brightness
 
 # Redshift toggle
 bindsym $mod+XF86MonBrightnessUp exec killall -USR1 redshift
