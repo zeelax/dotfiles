@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 18
+font pango:monospace 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -156,8 +156,7 @@ focus_follows_mouse no
 # finds out, if available)
 bar {
         status_command i3blocks
-        height 40
-        font pango:DejaVu Sans Mono, Icons 18
+        font pango:xos4 Terminus, Icons 10
 
     colors {
         focused_workspace  #917944 #DEB968 #232b38
@@ -193,7 +192,7 @@ bindsym $mod+XF86MonBrightnessUp exec killall -USR1 redshift
 bindsym $mod+mod1+l exec --no-startup-id i3lock -c 000000
 
 # NetworkManager dmenu
-bindcode $mod+49 exec networkmanager_dmenu -fn 'DejaVu Sans Mono-18'
+bindcode $mod+49 exec networkmanager_dmenu
 
 # Dmenu calculator
 bindsym $mod+equal exec /usr/local/bin/=
