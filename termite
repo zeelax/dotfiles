@@ -1,5 +1,5 @@
 [options]
-font = monospace 13
+font = Hack 11
 scrollback_lines = 100000
 cursor_blink = off
 
