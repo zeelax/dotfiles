@@ -126,7 +126,7 @@ signal=2
 # Date Time
 #
 [time]
-command=date '+W%V %Y-%m-%d %H:%M:%S '
+command=date '+W%V-%u %Y-%m-%d %H:%M:%S '
 interval=1
 
 # Generic media player support
