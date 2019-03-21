@@ -1,0 +1,3 @@
+event=battery
+action=/etc/acpi/handlers/power-supply.sh %e
+

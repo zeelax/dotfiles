@@ -1,0 +1,2 @@
+event=jack/headphone .*
+action=/etc/acpi/handlers/headphone-jack.sh %e
