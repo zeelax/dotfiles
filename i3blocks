@@ -24,7 +24,8 @@
 #
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
-command=/usr/lib/i3blocks/$BLOCK_NAME
+# use block from the i3blocks-contrib repo
+command=~/arch/i3blocks/i3blocks-contrib/$BLOCK_NAME/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
@@ -34,8 +35,6 @@ markup=none
 # The second parameter overrides the mixer selection
 # See the script for details.
 [volume]
-command=~/arch/i3blocks/i3blocks-contrib/volume/volume
-#label=VOL
 label=♪
 instance=Master
 #instance=PCM
@@ -62,9 +61,7 @@ signal=10
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
 [disk]
-#label=HOME
 label=
-#instance=/mnt/data
 interval=30
 
 # Network interface monitoring
@@ -72,14 +69,13 @@ interval=30
 # If the instance is not specified, use the interface used for default route.
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
 [iface]
-#instance=wlan0
 color=#00FF00
 interval=60
 separator=false
 signal=3
 
 [wifi]
-instance=wlp58s0
+instance=wlp2s0
 interval=60
 #separator=false
 signal=3
@@ -111,14 +107,7 @@ interval=10
 # Battery indicator
 #
 # The battery instance defaults to 0.
-#[battery]
-#label=BAT
-#label=⚡
-#instance=1
-#interval=30
-
-[battery]
-command=~/arch/i3blocks/i3blocks-contrib/battery2/battery2
+[battery2]
 markup=pango
 interval=30
 signal=2
@@ -152,19 +141,3 @@ interval=1
 #[temperature]
 #label=TEMP
 #interval=10
-
-# Key indicators
-#
-# Add the following bindings to i3 config file:
-#
-# bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
-# bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
-#[keyindicator]
-#instance=CAPS
-#interval=once
-#signal=11
-
-#[keyindicator]
-#instance=NUM
-#interval=once
-#signal=11
