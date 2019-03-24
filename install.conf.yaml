@@ -22,4 +22,5 @@
       path: ssh-agent.service
     ~/.gitconfig: gitconfig
     ~/.xinitrc: xinitrc
+    ~/.Xresources: Xresources
     ~/.zshrc: zsh/zshrc
