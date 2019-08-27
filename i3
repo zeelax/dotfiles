@@ -237,7 +237,7 @@ set $term termite
     bindsym XF86MonBrightnessUp exec brightnessctl set +5% # increase screen brightness
     bindsym XF86MonBrightnessDown exec brightnessctl set 5%- # decrease screen brightness
 
-    # screen brightness, +/- 5%
+    # screen brightness, +/- 1%
     bindsym shift+XF86MonBrightnessUp exec brightnessctl set +1% # increase screen brightness
     bindsym shift+XF86MonBrightnessDown exec brightnessctl set 1%- # decrease screen brightness
 
