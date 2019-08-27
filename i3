@@ -57,7 +57,7 @@ set $term termite
     bar {
             status_command i3blocks
             #font pango:DejaVu Sans Mono, Icons 10
-            font pango:xos4 Terminus, Icons 8
+            font pango:Terminus, Icons 8
 
         colors {
             focused_workspace  #917944 #DEB968 #232b38
