@@ -232,14 +232,26 @@ set $term termite
     # volume, (un-)mute
     bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && pkill -RTMIN+10 i3blocks
 
+    # media player controls
+    bindsym XF86AudioPlay exec --no-startup-id tizonia-remote pause
+    bindsym XF86AudioPrev exec --no-startup-id tizonia-remote prev
+    bindsym XF86AudioNext exec --no-startup-id tizonia-remote next
+
 
     # screen brightness, +/- 5%
     bindsym XF86MonBrightnessUp exec brightnessctl set +5% # increase screen brightness
     bindsym XF86MonBrightnessDown exec brightnessctl set 5%- # decrease screen brightness
 
+    bindsym control+XF86MonBrightnessUp exec brightnessctl -d ddcci5 set +5% # increase screen brightness
+    bindsym control+XF86MonBrightnessDown exec brightnessctl -d ddcci5 set 5%- # decrease screen brightness
+
     # screen brightness, +/- 1%
     bindsym shift+XF86MonBrightnessUp exec brightnessctl set +1% # increase screen brightness
     bindsym shift+XF86MonBrightnessDown exec brightnessctl set 1%- # decrease screen brightness
+
+    bindsym control+shift+XF86MonBrightnessUp exec brightnessctl -d ddcci5 set +1% # increase screen brightness
+    bindsym control+shift+XF86MonBrightnessDown exec brightnessctl -d ddcci5 set 1%- # decrease screen brightness
+
 
     # Redshift toggle
     bindsym $mod+XF86MonBrightnessUp exec killall -USR1 redshift

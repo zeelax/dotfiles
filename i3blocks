@@ -119,6 +119,10 @@ signal=2
 
 # Date Time
 #
+[frac_time]
+command=~/arch/fractime/fractime.py --lang de | tail -n 1
+interval=1
+
 [time]
 command=date '+W%V-%u %Y-%m-%d %H:%M:%S '
 interval=1
