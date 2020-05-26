@@ -101,11 +101,11 @@ set $term termite
 #
 # moving around
 #
-    # change focus
+    # change focus (UHK mode)
     bindsym $mod+j focus left
     bindsym $mod+k focus down
-    bindsym $mod+l focus up
-    bindsym $mod+semicolon focus right
+    bindsym $mod+i focus up
+    bindsym $mod+l focus right
 
     # alternative layout for nano users (me)
     bindsym $mod+Left focus left
@@ -116,8 +116,8 @@ set $term termite
     # move focused window
     bindsym $mod+Shift+j move left
     bindsym $mod+Shift+k move down
-    bindsym $mod+Shift+l move up
-    bindsym $mod+Shift+semicolon move right
+    bindsym $mod+Shift+i move up
+    bindsym $mod+Shift+l move right
 
     # alternatively, you can use the cursor keys:
     bindsym $mod+Shift+Left move left
@@ -189,6 +189,10 @@ set $term termite
     bindsym $mod+Shift+9 move container to workspace 9
     bindsym $mod+Shift+0 move container to workspace 10
 
+    # switch workspaces on current output
+    bindsym control+Mod1+Left workspace prev_on_output
+    bindsym control+Mod1+Right workspace next_on_output
+
 #
 # resizing containers
 #
@@ -238,24 +242,31 @@ set $term termite
     bindsym XF86AudioNext exec --no-startup-id tizonia-remote next
 
 
-    # screen brightness, +/- 5%
+    #
+    # internal screen brightness
+    #
+    # +/- 5%
     bindsym XF86MonBrightnessUp exec brightnessctl set +5% # increase screen brightness
     bindsym XF86MonBrightnessDown exec brightnessctl set 5%- # decrease screen brightness
 
-    bindsym control+XF86MonBrightnessUp exec brightnessctl -d ddcci5 set +5% # increase screen brightness
-    bindsym control+XF86MonBrightnessDown exec brightnessctl -d ddcci5 set 5%- # decrease screen brightness
-
-    # screen brightness, +/- 1%
+    # +/- 1%
     bindsym shift+XF86MonBrightnessUp exec brightnessctl set +1% # increase screen brightness
     bindsym shift+XF86MonBrightnessDown exec brightnessctl set 1%- # decrease screen brightness
 
-    bindsym control+shift+XF86MonBrightnessUp exec brightnessctl -d ddcci5 set +1% # increase screen brightness
-    bindsym control+shift+XF86MonBrightnessDown exec brightnessctl -d ddcci5 set 1%- # decrease screen brightness
 
+    #
+    # external screen brightness
+    #
+    # +/- 5%
+    bindsym control+XF86MonBrightnessUp exec brightnessctl -d ddcci5 set +5% # increase screen brightness
+    bindsym control+XF86MonBrightnessDown exec brightnessctl -d ddcci5 set 5%- # decrease screen brightness
+
+    # external keyboard mapping
+    bindsym $mod+Prior exec brightnessctl -d ddcci5 set +5% # increase screen brightness
+    bindsym $mod+Next exec brightnessctl -d ddcci5 set 5%- # decrease screen brightness
 
     # Redshift toggle
     bindsym $mod+XF86MonBrightnessUp exec killall -USR1 redshift
-
 
 ### Old stuff
 # Lock screen
