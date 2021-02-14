@@ -52,21 +52,7 @@ set $term termite
 #
 # status bar
 #
-    # Start i3bar to display a workspace bar (plus the system information i3status
-    # finds out, if available)
-    bar {
-            status_command i3blocks
-            #font pango:DejaVu Sans Mono, Icons 10
-            font pango:Terminus, Icons 8
-
-        colors {
-            focused_workspace  #917944 #DEB968 #232b38
-            active_workspace   #333333 #222222 #E3C891
-            inactive_workspace #333333 #222222 #888888
-            urgent_workspace   #2F343A #900000 #FFFFFF
-            binding_mode       #2F343A #900000 #FFFFFF
-        }
-    }
+# See polybar config
 
 
 ### key bindings
@@ -289,3 +275,4 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id xset r rate 200 50
 exec --no-startup-id ~/.fehbg
 exec --no-startup-id xss-lock -l -- i3lock -c 000000
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh

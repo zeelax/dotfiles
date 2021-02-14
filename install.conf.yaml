@@ -14,6 +14,9 @@
     ~/.config/networkmanager-dmenu/config.ini:
       create: true
       path: networkmanager-dmenu.ini
+    ~/.config/polybar/config:
+      create: true
+      path: polybar
     ~/.config/termite/config:
       create: true
       path: termite
