@@ -244,12 +244,12 @@ set $term termite
     # external screen brightness
     #
     # +/- 5%
-    bindsym control+XF86MonBrightnessUp exec brightnessctl -d ddcci5 set +5% # increase screen brightness
-    bindsym control+XF86MonBrightnessDown exec brightnessctl -d ddcci5 set 5%- # decrease screen brightness
+    bindsym control+XF86MonBrightnessUp exec brightnessctl -d ddcci9 set +5% # increase screen brightness
+    bindsym control+XF86MonBrightnessDown exec brightnessctl -d ddcci9 set 5%- # decrease screen brightness
 
     # external keyboard mapping
-    bindsym $mod+Prior exec brightnessctl -d ddcci5 set +5% # increase screen brightness
-    bindsym $mod+Next exec brightnessctl -d ddcci5 set 5%- # decrease screen brightness
+    bindsym $mod+Prior exec brightnessctl -d ddcci9 set +5% # increase screen brightness
+    bindsym $mod+Next exec brightnessctl -d ddcci9 set 5%- # decrease screen brightness
 
     # Redshift toggle
     bindsym $mod+XF86MonBrightnessUp exec killall -USR1 redshift
