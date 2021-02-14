@@ -7,6 +7,15 @@
 - link:
     ~/.dotfiles: ''
     ~/.config/compton.conf: compton.conf
+    ~/.gtkrc-2.0:
+      create: true
+      path: gtkrc-2.0
+    ~/.config/gtk-2.0/gtkfilechooser.ini:
+      create: true
+      path: gtkfilechooser.ini
+    ~/.config/gtk-3.0/settings.ini:
+      create: true
+      path: gtk3-settings.ini
     ~/.config/i3/config:
       create: true
       path: i3
